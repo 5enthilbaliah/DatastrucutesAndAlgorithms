@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Google", "Google", "{67F5B6EF-4FD5-49DA-852A-874F7C7BE993}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSampleProblem", "GoogleSampleProblem\GoogleSampleProblem.csproj", "{2A68802B-3889-46AE-A36A-451A4C415253}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A68802B-3889-46AE-A36A-451A4C415253} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A68802B-3889-46AE-A36A-451A4C415253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A68802B-3889-46AE-A36A-451A4C415253}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
