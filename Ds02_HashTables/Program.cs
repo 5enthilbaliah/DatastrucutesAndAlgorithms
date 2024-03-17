@@ -27,3 +27,6 @@ foreach (var key in hashTable.Keys)
 {
     Console.WriteLine(key);
 }
+
+var firstRecurring = new FirstRecurringNumber().Execute(new [] { 2, 5, 1, 2, 3, 5, 1, 2, 4 });
+Console.WriteLine(firstRecurring.HasValue ? $"{firstRecurring}" : "Not Found");
