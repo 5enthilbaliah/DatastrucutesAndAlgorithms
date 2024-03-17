@@ -54,3 +54,10 @@ Console.WriteLine( string.Join(',', subSet.Select(x => $"{x}")));
 
 var rotated = new RotateArray(new [] { 1, 2, 3, 4, 5, 6, 7 }).Execute(14);
 Console.WriteLine( string.Join(',', rotated.Select(x => $"{x}")));
+
+
+var duplicateFound = new DuplicateChecker().Execute(new [] { 1, 2, 3, 1});
+Console.WriteLine(duplicateFound);
+
+var moveZeroes = new MoveZero().Execute(new [] { 0, 1, 0, 3, 12 });
+Console.WriteLine( string.Join(',', moveZeroes.Select(x => $"{x}")));
