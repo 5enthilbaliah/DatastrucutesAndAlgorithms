@@ -14,3 +14,8 @@ problem.
   - push O(1) // insert at end
   - insertAt O(n)
   - deleteAt O(n)
+- HashTables (in case of C# use the inbuilt HashSet)
+  - lookup O(1) // find the key only
+  - search O(1) // this depends on how the data structure handles collision; it can be 0(n);
+  - insert O(1) 
+  - delete O(1) // this depends on how the data structure handles collision; it can be 0(n);

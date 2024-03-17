@@ -11,12 +11,12 @@ public class DuplicateChecker
 
     public bool Execute(int[] array)
     {
-        for (var i = 0; i < array.Length; i++)
+        foreach (var t in array)
         {
-            if (_hash.Contains(array[i]))
+            if (_hash.Contains(t))
                 return true;
 
-            _hash.Add(array[i]);
+            _hash.Add(t);
         }
 
         return false;
