@@ -52,4 +52,10 @@ public class HashiTable
 
         return found != null;
     }
+    
+    
+
+    public IEnumerable<string> Keys => _data.Where(x => x?.Any() ?? false)
+        .SelectMany(d => d.Select(x => x.Key));
+
 }

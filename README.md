@@ -19,3 +19,4 @@ problem.
   - search O(1) // this depends on how the data structure handles collision; it can be 0(n);
   - insert O(1) 
   - delete O(1) // this depends on how the data structure handles collision; it can be 0(n);
+  - keys O(n) // this depends on how the data structure handles collision; it can be 0(n ^ 2);

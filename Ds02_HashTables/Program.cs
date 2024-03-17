@@ -22,3 +22,8 @@ if (exists2)
     Console.WriteLine(result2);
 else 
     Console.WriteLine("Not found");
+
+foreach (var key in hashTable.Keys)
+{
+    Console.WriteLine(key);
+}
