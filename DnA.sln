@@ -6,6 +6,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem01_GoogleSample", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem02_CommonInTwoArrays", "Problem02_CommonInTwoArrays\Problem02_CommonInTwoArrays.csproj", "{31F78D84-C356-4FED-B1A1-91EE50E37870}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataStructures", "DataStructures", "{99A9950D-63C0-4554-B2A8-9F495E13E9EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ds01_Arrays", "Ds01_Arrays\Ds01_Arrays.csproj", "{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,6 +18,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{31F78D84-C356-4FED-B1A1-91EE50E37870} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+		{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1} = {99A9950D-63C0-4554-B2A8-9F495E13E9EA}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -24,5 +29,9 @@ Global
 		{31F78D84-C356-4FED-B1A1-91EE50E37870}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31F78D84-C356-4FED-B1A1-91EE50E37870}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31F78D84-C356-4FED-B1A1-91EE50E37870}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08608EE-4BC1-4B62-A5C0-BC7EF19602D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
