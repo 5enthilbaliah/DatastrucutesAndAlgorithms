@@ -14,9 +14,15 @@ problem.
   - push O(1) // insert at end
   - insertAt O(n)
   - deleteAt O(n)
-- HashTables (in case of C# use the inbuilt HashSet)
+- HashTables (in case of C# use the inbuilt HashSet) - Use more space but helps in time optimization
   - lookup O(1) // find the key only
   - search O(1) // this depends on how the data structure handles collision; it can be 0(n);
   - insert O(1) 
   - delete O(1) // this depends on how the data structure handles collision; it can be 0(n);
   - keys O(n) // this depends on how the data structure handles collision; it can be 0(n ^ 2);
+- Linked list (in C# we have an inbuilt LinkedList implementation)
+  - Append O(1)
+  - prepend O(1)
+  - lookup O(n)
+  - insert O(n)
+  - delete O(n)
