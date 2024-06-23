@@ -38,4 +38,31 @@ dLinkList.InsertAt(5, 17);
 
 Console.WriteLine(dLinkList.ToString());
 Console.WriteLine(dLinkList.RevToString());
+
+var lList = new LinkedList<int>(new [] { 10 });
+
+lList.AddLast(11);
+lList.AddLast(12);
+lList.AddLast(13);
+lList.AddLast(14);
+lList.AddLast(15);
+
+lList.AddFirst(9);
+
+lList.Remove(13);
+lList.Remove(15);
+
+var node = lList.Find(9);
+if (node is not null)
+lList.AddBefore(node, 8);
+
+node = lList.Find(12);
+if (node is not null)
+    lList.AddAfter(node, 17);
+
+foreach (var val in lList)
+{
+    Console.Write($"{val}-->");
+}
+
 Console.ReadLine();

@@ -20,7 +20,13 @@ problem.
   - insert O(1) 
   - delete O(1) // this depends on how the data structure handles collision; it can be 0(n);
   - keys O(n) // this depends on how the data structure handles collision; it can be 0(n ^ 2);
-- Linked list (in C# we have an inbuilt LinkedList implementation)
+- Linked list (in C# we have an inbuilt doubly LinkedList implementation)
+  - Append O(1)
+  - prepend O(1)
+  - lookup O(n)
+  - insert O(n)
+  - delete O(n)
+- Doubly Linked list (in C# we have an inbuilt LinkedList implementation)
   - Append O(1)
   - prepend O(1)
   - lookup O(n)
