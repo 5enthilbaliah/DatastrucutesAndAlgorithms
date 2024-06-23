@@ -15,13 +15,27 @@ linkList.PrependWith(9);
 linkList.RemoveAt(4);
 linkList.RemoveAt(5);
 
-var current = linkList.Head;
+linkList.InsertAt(1, 8);
+linkList.InsertAt(5, 17);
 
-Console.WriteLine(current.Value);
-while (current.Next is not null)
-{
-    Console.WriteLine(current.Next.Value);
-    current = current.Next;
-}
+Console.WriteLine(linkList.ToString());
 
+var dLinkList = new DoublyLinkiList<int>(10);
+dLinkList.AppendWith(11);
+dLinkList.AppendWith(12);
+dLinkList.AppendWith(13);
+dLinkList.AppendWith(14);
+dLinkList.AppendWith(15);
+
+dLinkList.PrependWith(9);
+
+dLinkList.RemoveAt(4);
+
+dLinkList.RemoveAt(5);
+
+dLinkList.InsertAt(1, 8);
+dLinkList.InsertAt(5, 17);
+
+Console.WriteLine(dLinkList.ToString());
+Console.WriteLine(dLinkList.RevToString());
 Console.ReadLine();

@@ -1,41 +1,36 @@
-﻿// ReSharper disable All
-namespace Ds03_LinkedList;
+﻿namespace Ds03_LinkedList;
 
 using System.Text;
 
-public class LinkiListNode<T>
+public class DoublyLinkiListNode<T>
 {
+    public DoublyLinkiListNode<T>? Prev { get; set; }
     public T Value { get; set; }
-    public LinkiListNode<T>? Next { get; set; }
+    public DoublyLinkiListNode<T>? Next { get; set; }
     
-    public LinkiListNode(T value)
+    public DoublyLinkiListNode(T value)
     {
+        Prev = default;
         Value = value;
         Next = default;
     }
-
-    public LinkiListNode(T value, LinkiListNode<T> next)
-    {
-        Value = value;
-        Next = next;
-    }
 }
 
-public class LinkiList<T>
+public class DoublyLinkiList<T>
 {
-    public LinkiListNode<T> Head { get; private set; }
-    public LinkiListNode<T> Tail { get; private set; }
+    public DoublyLinkiListNode<T> Head { get; private set; }
+    public DoublyLinkiListNode<T> Tail { get; private set; }
     public int Count { get; private set; } = 0;
 
-    public LinkiList(T value)
+    public DoublyLinkiList(T value)
     {
-        var node = new LinkiListNode<T>(value);
+        var node = new DoublyLinkiListNode<T>(value);
         Head = node;
         Tail = node;
         Count++;
     }
-
-    private LinkiListNode<T> TraverseTo(int position)
+    
+    private DoublyLinkiListNode<T> TraverseTo(int position)
     {
         var current = Head!;
         for (var runner = 1; runner < position; runner++)
@@ -45,37 +40,50 @@ public class LinkiList<T>
 
         return current;
     }
+    
+    private DoublyLinkiListNode<T> ReverseTraverseTo(int position)
+    {
+        var current = Tail!;
+        for (var runner = 1; runner < Count - position; runner++)
+        {
+            current = current.Prev!;
+        }
 
+        return current;
+    }
+    
     public T LookUp(int position)
     {
         var current = TraverseTo(position);
         return current.Value;
     }
-
-    public void Prepend(LinkiListNode<T> node)
+    
+    public void Prepend(DoublyLinkiListNode<T> node)
     {
         node.Next = Head;
+        Head.Prev = node;
         Head = node;
         Count++;
     }
     
     public void PrependWith(T value)
     {
-        Prepend(new LinkiListNode<T>(value));
+        Prepend(new DoublyLinkiListNode<T>(value));
     }
-
-    public void Append(LinkiListNode<T> node)
+    
+    public void Append(DoublyLinkiListNode<T> node)
     {
         Tail.Next = node;
+        node.Prev = Tail;
         Tail = Tail.Next;
         Count++;
     }
 
     public void AppendWith(T value)
     {
-        Append(new LinkiListNode<T>(value));
+        Append(new DoublyLinkiListNode<T>(value));
     }
-
+    
     public T? RemoveAt(int position)
     {
         if (position > Count)
@@ -97,8 +105,17 @@ public class LinkiList<T>
 
         var current = TraverseTo(position);
         var toRemove = current.Next!;
-        current.Next = toRemove.Next;
+        var next = toRemove.Next!;
+        current.Next = next;
+        if (next is not null)
+            next.Prev = current;
+
         Count--;
+
+        if (Count == position)
+        {
+            Tail = current;
+        }
         
         if (Count == 1)
         {
@@ -107,7 +124,7 @@ public class LinkiList<T>
 
         return toRemove.Value;
     }
-
+    
     public void InsertAt(int position, T value)
     {
         if (position <= 1)
@@ -123,12 +140,18 @@ public class LinkiList<T>
         }
         
         var current = TraverseTo(position);
-        var toAdd = new LinkiListNode<T>(value);
-        toAdd.Next = current.Next;
+        var toAdd = new DoublyLinkiListNode<T>(value);
+        var next =  current.Next;
+        toAdd.Next = next;
+        toAdd.Prev = current;
+        
+        if (next is not null)
+            next.Prev = toAdd;
+
         current.Next = toAdd;
         Count++;
     }
-
+    
     public override string ToString()
     {
         var builder = new StringBuilder($"{Head.Value}");
@@ -138,6 +161,20 @@ public class LinkiList<T>
         {
             builder.Append($"-->{current.Next.Value}");
             current = current.Next;
+        }
+        
+        return builder.ToString();
+    }
+    
+    public string RevToString()
+    {
+        var builder = new StringBuilder($"{Tail.Value}");
+        var current = Tail;
+        
+        while (current.Prev is not null)
+        {
+            builder.Append($"-->{current.Prev.Value}");
+            current = current.Prev;
         }
         
         return builder.ToString();
