@@ -20,7 +20,7 @@ problem.
   - insert O(1) 
   - delete O(1) // this depends on how the data structure handles collision; it can be 0(n);
   - keys O(n) // this depends on how the data structure handles collision; it can be 0(n ^ 2);
-- Linked list (in C# we have an inbuilt doubly LinkedList implementation)
+- Linked list (in C# we have an inbuilt LinkedList implementation)
   - Append O(1)
   - prepend O(1)
   - lookup O(n)
@@ -32,3 +32,13 @@ problem.
   - lookup O(n)
   - insert O(n)
   - delete O(n)
+- Stacks - LIFO - (in C# we have an inbuilt Stack implementation )
+  - LookUp O(n)
+  - Pop O(1)
+  - Push O(1)
+  - Peek O(1)
+- Queues - FIFO - (in C# we have an inbuilt Stack implementation )
+  - LookUp O(n)
+  - Enqueue O(1)
+  - Dequeue O(1)
+  - Peek O(1)
