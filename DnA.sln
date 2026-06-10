@@ -36,6 +36,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11_LeastCommonMultip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem11_PerfectNumber", "Problem11_PerfectNumber\Problem11_PerfectNumber.csproj", "{C349705A-9E6A-4471-845D-F6E8305FCF2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12_PairCubeCount", "Problem12_PairCubeCount\Problem12_PairCubeCount.csproj", "{022CDD63-5262-449B-BC7F-7C7F6A4FD225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,7 @@ Global
 		{8955A557-12B6-4AA0-92D8-CB3665017FB4} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{12DDD050-5037-4AA5-820A-225898B489D4} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{C349705A-9E6A-4471-845D-F6E8305FCF2E} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+		{022CDD63-5262-449B-BC7F-7C7F6A4FD225} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -124,5 +127,9 @@ Global
 		{C349705A-9E6A-4471-845D-F6E8305FCF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C349705A-9E6A-4471-845D-F6E8305FCF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C349705A-9E6A-4471-845D-F6E8305FCF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{022CDD63-5262-449B-BC7F-7C7F6A4FD225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{022CDD63-5262-449B-BC7F-7C7F6A4FD225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{022CDD63-5262-449B-BC7F-7C7F6A4FD225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{022CDD63-5262-449B-BC7F-7C7F6A4FD225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
