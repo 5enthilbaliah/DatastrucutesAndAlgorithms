@@ -2,23 +2,10 @@
 
 public class DuplicateChecker
 {
-    private HashSet<int> _hash;
-
-    public DuplicateChecker()
-    {
-        _hash = new HashSet<int>();
-    }
+    private readonly HashSet<int> _hash = [];
 
     public bool Execute(int[] array)
     {
-        foreach (var t in array)
-        {
-            if (_hash.Contains(t))
-                return true;
-
-            _hash.Add(t);
-        }
-
-        return false;
+        return array.Any(t => !_hash.Add(t));
     }
 }
