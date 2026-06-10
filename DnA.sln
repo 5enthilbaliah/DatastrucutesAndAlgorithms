@@ -24,6 +24,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem05_NthNumberInGeomet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem06_ClosestNumberDivisible", "Problem06_ClosestNumberDivisible\Problem06_ClosestNumberDivisible.csproj", "{BE6B8612-D338-42EF-A823-7ACE03B2A7AB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem07_ArmstrongNumbers", "Problem07_ArmstrongNumbers\Problem07_ArmstrongNumbers.csproj", "{F53824D0-6C87-436C-83CE-597CDEB46E78}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +42,7 @@ Global
 		{A0CDF0D6-2A67-4B27-BDB5-0242B35FD06C} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{79958F21-2BF5-4F3B-A408-20E07FB19FC2} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{BE6B8612-D338-42EF-A823-7ACE03B2A7AB} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+		{F53824D0-6C87-436C-83CE-597CDEB46E78} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -82,5 +85,9 @@ Global
 		{BE6B8612-D338-42EF-A823-7ACE03B2A7AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BE6B8612-D338-42EF-A823-7ACE03B2A7AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BE6B8612-D338-42EF-A823-7ACE03B2A7AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F53824D0-6C87-436C-83CE-597CDEB46E78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F53824D0-6C87-436C-83CE-597CDEB46E78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F53824D0-6C87-436C-83CE-597CDEB46E78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F53824D0-6C87-436C-83CE-597CDEB46E78}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
