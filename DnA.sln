@@ -40,6 +40,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem12_PairCubeCount", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem13_NthRoot", "Problem13_NthRoot\Problem13_NthRoot.csproj", "{C19BB735-1DB5-45D8-92F7-77A46F090B3D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem14_Permutations", "Problem14_Permutations\Problem14_Permutations.csproj", "{AD6C3636-3D68-4AB6-BB29-56A9542A89F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,7 @@ Global
 		{C349705A-9E6A-4471-845D-F6E8305FCF2E} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{022CDD63-5262-449B-BC7F-7C7F6A4FD225} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{C19BB735-1DB5-45D8-92F7-77A46F090B3D} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -138,5 +141,9 @@ Global
 		{C19BB735-1DB5-45D8-92F7-77A46F090B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C19BB735-1DB5-45D8-92F7-77A46F090B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C19BB735-1DB5-45D8-92F7-77A46F090B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
