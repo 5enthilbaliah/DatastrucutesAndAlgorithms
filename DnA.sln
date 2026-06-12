@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem14_Permutations", "P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem15_IsSquare", "Problem15_IsSquare\Problem15_IsSquare.csproj", "{60FEF488-48FB-4C09-B396-A0FCC9047D57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Problem16_CheckForPower", "Problem16_CheckForPower\Problem16_CheckForPower.csproj", "{0C4D8074-E70E-4889-893A-EBAF65243F01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -70,6 +72,7 @@ Global
 		{C19BB735-1DB5-45D8-92F7-77A46F090B3D} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{AD6C3636-3D68-4AB6-BB29-56A9542A89F7} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 		{60FEF488-48FB-4C09-B396-A0FCC9047D57} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
+		{0C4D8074-E70E-4889-893A-EBAF65243F01} = {67F5B6EF-4FD5-49DA-852A-874F7C7BE993}
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{2A68802B-3889-46AE-A36A-451A4C415253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -152,5 +155,9 @@ Global
 		{60FEF488-48FB-4C09-B396-A0FCC9047D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{60FEF488-48FB-4C09-B396-A0FCC9047D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{60FEF488-48FB-4C09-B396-A0FCC9047D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C4D8074-E70E-4889-893A-EBAF65243F01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C4D8074-E70E-4889-893A-EBAF65243F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C4D8074-E70E-4889-893A-EBAF65243F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C4D8074-E70E-4889-893A-EBAF65243F01}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
